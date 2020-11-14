@@ -1,0 +1,84 @@
+JAVASCRIPT VERSION
+- ES5, ES6/ES2015, ES7/ES2016, ES8/ES2017
+
+PRIMITIVE JAVASCRIPT DATA TYPES
+1. Number: float point numbers, for decimals and integers
+2. String: sequence of characters, used for text
+3. Boolean: Logical data type that can only be true and false
+4. Undefined: data type of a variable that does not have a value yet
+5. Null: also means "non-existent"
+- JavaScript has dynamic typing: data types are automatically assigned to variables
+
+LET, CONST, VAR
+- let and const were introduced in ES6
+- var is pretty much the same as let but it is older way of declaring variables, prior to ES6
+
+TYPE COERCION AND VARIABLE MUTATION
+- javascript automatically converts type
+
+FALSY VALUES
+- undefined, null, 0, '', NaN
+
+TRUTHY VALUES
+- not falsy values
+
+EQUALITY OPERATORS
+- "==" operator does type coercion
+- "===" operator does not 
+
+FUNCTIONS
+- function declaration
+- function expression
+- arrow function (introduced in ES6) 
+- arrow function do not get a so-called this keyword
+
+1996: change from LiveScript to Javascript to attract Java developers
+1997: ES1 (ECMAScript 1) became the first version of the Javascript language standard:
+    - ECMAScript: The language standard
+    - JavaScript: The language in practice
+2009: ES5 (ECMAScript 5) was released with lots of new features
+2015: ES6/ES2015 (ECMAScript 2015) was released: the biggest update to language ever!
+2015: Change to an annual release cycle!
+2016: ES2016
+...
+
+ES5 - fully supported in all browsers
+ES6,7,8 - well supported in all modern browsers, no support in older browsers, can use most features in production with transpiling (converting to ES5)
+
+ES9(ES2018); ES10(ES2019); - future version, together called ESNext; some features supported in modern browsers
+
+code execution:
+- our code is pass to JS engine, engine has parser which reads code line by line using abstract syntax tree then it is translated to machine code and then code runs
+
+
+Execution context - a box, a container or a wrapper which stores variables and in which a piece of our code is evaluated and executed. The default context is always Global Execution Context.
+Code that is not inside any function, associated with the global object, in the browser thats the window object
+
+Execution context object - Variable Object (VO), Scope chain, "This" var
+Steps:
+1. Creation phase: A) Creation of the VO, B) Creation of the scope chain, C) Determine value of the 'this' variable
+2. Execution phase: The code of the function that generated the current execution context is ran line by line
+
+THE VARIABLE OBJECT:
+- the argument object is created, containing all the arguments that were passed into the function
+- code is scanned for function declarations: for each function, a property is created in VO, pointing to the function (HOISTING)
+- code is scanned for variable declarations: for each variable, a property is created in the VO and set to undefined (HOISTING)
+
+SCOPING IN JAVASCRIPT:
+- scoping answers the question "where can we access a certain variable?"
+- each new function creates a scope: the space/environment in which the variables it defines are accessible
+- lexical scoping: a function that is lexically within another functon gets access to the scope of the outer function
+
+EXECUTION STACK VS SCOPE CHAIN
+- execution stack : global context, first() context, second() context, third() context
+- scope chain : order in which function are written lexically; level 1: global scope, level 2: first() and third(), level 3: second()
+
+THIS 
+- Regular function call: the this keyword points at the global object (the window object, in the browser)
+- Method call: the this variable points to the object that is calling the Method
+- the tthis keyword is not assigned a value until a function where it is defined is actually called
+
+DOM 
+- Document Object Model: structured representation of HTML documents. Allows Javascript to access html elements and styles to manipulate them
+- DOM !== JAVASCRIPT
+- DOM is part of WEB APIs which browsers implemented and we can access it from our Javascript code

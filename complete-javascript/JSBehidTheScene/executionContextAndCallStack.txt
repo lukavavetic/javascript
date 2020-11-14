@@ -1,0 +1,27 @@
+EXECUTION CONTEXT
+- creation of global execution context (for top-level code) - not inside a function
+- environment in which a piece of javascript is executed. stores all the necessary information for some code to be executed
+- there is only one global execution context
+
+STEPS:
+1. compilation
+2. execution
+  a) creation of global EC 
+  b) execution of global EC 
+  c) execution of functions and waiting for callbacks - one EC per functions: for each function call, a new execution context is created.all together make the call stack
+
+WHAT IS INSIDE EC?
+1) Variable environment - let, const, var declarations, functions, arguments objects
+2) Scope chain
+3) This
+
+- context is genereated during "creation pahse", right before execution
+- arrow functions does not get arguments object and this keyword, they are using this keyword and arguments object from their closest 
+regular function parent
+
+CALL STACK 
+- "place" where execution contexts get stacked on top of each other to keep track of where we are in the execution
+
+
+
+

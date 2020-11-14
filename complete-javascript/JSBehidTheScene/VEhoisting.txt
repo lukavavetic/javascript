@@ -1,0 +1,18 @@
+HOISTING
+- makes some types of variables accessible/usable in the code before they are actually declared. "Variables lifted to the top of their scope."
+- before execution, code is scanned for variable declarations and for each variable a new property is created in the VARIABLE ENVIRONMENT OBJECT
+
+                          hoisted?   initial value?         scope?
+function declarations -   yes        actual function        block  - only in stric mode, otherwise: function
+var variables -           yes        undefined              function
+let and cost              no         <uninitialized>, TDZ   block
+function expressions             depeneds weather they are created using var or let/const
+and arrows 
+
+TEMPORAL DEAD ZONE, LET AND cost
+- referenceError: cannot access 'job' before initialization
+- referenceError: x is not defined
+- make const variables actually work
+
+WHY HOISTING?
+- using function before actual declaration

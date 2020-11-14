@@ -1,0 +1,31 @@
+SCOPING
+- Scoping controlles how our program's variables are organized and accessed
+
+LEXICAL SCOPING
+- scoping is controlled by placamenet of functions and blocks in the code 
+- f.e. function written inside other function  has access to the variables of the parent function
+
+SCOPE
+- space or environment in which a certain variable is declaed (variable environment in case of functions)
+- there is GLOBAL, FUNCTION and BLOCK scope
+
+SCOPE OF A VARIABLE
+- region of our code where a certian variable can be accessed
+
+GLOBAL SCOPE
+- outside of any function or block 
+- variables declared in global scope are accessible everywhere
+
+FUNCTION SCOPE 
+- variables are accessible only inside function, NOT outside
+- also called local scope
+
+BLOCK SCOPE (ES6)
+- variables are accessible only inside block - if, for loop, etc
+- however, this only applies to let and const variables 
+- functions are also block scoped (only in strict mode)
+
+VARIABLE LOOKUP IN SCOPE CHAIN
+- if variable is not present in current scope, it will reach to it in parent scope 
+
+SCOPE CHAIN vs CALL STACK 

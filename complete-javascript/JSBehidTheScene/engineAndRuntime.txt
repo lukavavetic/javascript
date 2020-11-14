@@ -1,0 +1,26 @@
+Javascript engine
+- program that executes javascript code
+- chrome engine is V8 engine, other browser has their own engine
+- every JS engine contains CALL STACK and HEAP
+- CALL STACK is where our code is executed - execution context
+- HEAP - where objects are stored in memory
+
+COMPILATION
+- entire code is converted into machine code at once, and written to a binary file that can be executed by a computer
+
+INTEPRETATION
+- interpreter runs through the source code and executes it line by line
+- interpreted languages are much slower than compiled
+
+JUST-IN-TIME (JIT)
+- modern JS uses JIT
+- entire code is converted into machine code at once then executed immediately
+
+STEPS:
+1. parsing the code into the data structure called AST
+2. compilation - generate machine code from AST
+3. execution
+4. during the execution code goes through optimization process
+
+WEB APIs such as DOM, Timers, Fetch API and so on are accessible through window object
+JS also contains callback queue - click, timer, data..
