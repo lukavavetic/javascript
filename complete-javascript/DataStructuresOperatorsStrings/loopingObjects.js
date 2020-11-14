@@ -27,15 +27,16 @@ const restaurant = {
   }
 };
 
-//console.log(restaurant.openingHours.mon.open); // error
+const properties = Object.keys(restaurant.openingHours); // [thu, fri, sat]
 
-//with optional chaining
-console.log(restaurant.openingHours?.mon?.open); //undefined
+for (const day of properties) console.log(day);
 
-// methods
-console.log(restaurant.order?.(0,1) ?? 'Method not exists!');
+const values = Object.values(restaurant.openingHours); // [{ open: 12, close: 22 }, { open: 11, close: 23 }, { open: 0, close: 24 }]
 
-// arrays
-const users = [];
+for (const openClosed of values) console.log(openClosed);
 
-console.log(users[0]?.name ?? 'User array empty!');
+const entries = Object.entries(restaurant.openingHours); // converts object in array
+
+for (const [day, {open,closed}] of entries) {
+  console.log(`on ${day} we are open at ${open} and closed at ${closed}`);
+}
