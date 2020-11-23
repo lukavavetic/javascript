@@ -1,0 +1,21 @@
+OOP IN JS: PROTOTYPES
+- prototype contains all methods
+- object can access those methods
+- objects are linked to a prototype object
+- PROTOTYPAL INHERITANCE: the prototype contains methods that are accessible to all objects to that prototype
+- behavior is delegated to the linked prototype object
+
+3 WAYS OF IMPLEMENTING PROTOTYPAL INHERITANCE IN JS
+1. CONSTRUCTOR FUNCTIONS
+- technique to create objects from a function;
+- this is how built-in objects like Arrays, Maps or Sets are actually implemented
+
+2. ES6 Classes
+- modern alternative to constructor function syntax;
+- "Syntatic sugar": behind the scenes, ES6 classes work exactly like constructor functions;
+- ES6 classes do not behave like classes in "classical OOP";
+
+3. Object.create()
+- 
+
+- arrow function cannot work as constructor because they don't have a this keyword
