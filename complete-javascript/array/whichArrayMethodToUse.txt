@@ -1,0 +1,31 @@
+TO MUTATE ORIGINAL ARRAY:
+1. add to original: .push (end), .unshift(start)
+2. remove from original: .pop(end), .shift(start), .splice(any)
+3. others: .reverse, .sort, .fill
+
+A NEW ARRAY
+1. computed from original: .map(loop)
+2. filtered using condition: .filter
+3. portion of original: .slice
+4. adding original to other: .concat
+5. flattening the original: .flat, .flatMap
+
+AN ARRAY INDEX
+1. based on value: .indexOf
+2. based on test condition: .findIndex
+
+AN ARRAY ELEMENT
+1. based on test condition: .find
+
+KNOW IF ARRAY INCLUDES
+1. based on value: .includes
+2. based on test condition: .some, .every
+
+A NEW STRING
+1. based on separator string: .join
+
+TO TRANSFORM VALUE:
+1. based on accumulator: .reduce (boil down array to single value of any type)
+
+TO JUST LOOP ARRAY
+1. based on callback: .forEach
